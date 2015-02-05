@@ -18,7 +18,18 @@ html {
 }
 
 html {
+	font-family: 'Anonymous Pro', Sans-serif;
+	background-color: lightgery;
+}
+
+body {
+	margin: 0;
+}
+
+.backholder {
 	background-color: black;
+	height: 100vh;
+	width: 100%;
 }
 
 h1 {
@@ -31,7 +42,7 @@ h1 {
 
 .logo {
 	position: absolute;
-	top: 6em;
+	top: 2rem;
 	left: calc(50% - 12em);
 	width: 25em;
 	margin: auto;
@@ -46,7 +57,7 @@ h1 {
 
 .burst {
 	position: absolute;
-	top: calc(50% + 10em);
+	top: calc(50% + 5em);
 	left: calc(50% - 20em);
 	width: 40em;
 	margin: auto;
@@ -65,7 +76,7 @@ h1 {
 
 .rburst {
 	position: absolute;
-	top: calc(50% - 14px);
+	top: calc(50% - 10em);
 	left: calc(50% - 20em);
 	width: 40em;
 	margin: auto;
@@ -84,15 +95,15 @@ h1 {
 
  .btn {
  	position: absolute;
- 	top: 42rem;
-	left: calc(60% - 224px);
+ 	top: 40rem;
+	left: calc(50% - 2.875em);
 	background: #428BCA;
 	color: #fff;
 	font-family: "Anonymous Pro" Sans-serif;
 	font-weight: 700;
 	font-size: 2rem;
 	height: 2em;
-	width: 6em;
+	width: 5.75em;
 	line-height: 2rem;
 	margin: 0 auto;
 	text-align: center;
@@ -112,5 +123,43 @@ h1 {
 .fade {
 	opacity: 0;
 	-webkit-animation:btn 1.5s ease forwards;
+	-webkit-animation-delay: 5s;
+}
+
+.textfade {
+	opacity: 0;
+	-webkit-animation:text 1.5s ease forwards;
 	-webkit-animation-delay: 4s;
 }
+
+@-webkit-keyframes text {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.text {
+	position: absolute;
+	top: 34rem;
+	font-size: 1.25rem;
+	font-weight:700;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+
+@media only screen and (max-device-width: 890px) {
+.btn {
+	xleft: calc(34% + 2em);
+	}
+}
+
+
+@media only screen and (max-device-width: 1110px) {
+
+.btn {
+	xleft: calc(36% + 2em);
+	}
+
+}
+
