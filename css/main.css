@@ -53,7 +53,7 @@ h1 {
 	z-index: 0;
 	opacity: 0;
 	-webkit-filter: blur(78px);
-	-webkit-animation: burst 4s ease infinite;
+	-webkit-animation: burst 2s ease infinite;
 	-webkit-animation-delay: 2s;
 }
 
@@ -80,4 +80,37 @@ h1 {
 	0% {-webkit-opacity: 0;}
 	50% {-webkit-opacity: 1;}
 	100% {-webkit-opacity: 0;}
+}
+
+ .btn {
+ 	position: absolute;
+ 	top: 37rem;
+	left: calc(60% - 224px);
+	background: #428BCA;
+	color: #fff;
+	font-family: "Anonymous Pro" Sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	height: 3.750em;
+	width: 9.375em;
+	line-height: 3.75em;
+	margin: 1.5em 1.5em;
+	text-align: center;
+	border: 0;
+	transition: all 0.3s ease 0s;
+	}
+
+.btn:hover {
+	opacity: 0.75;
+}
+
+@-webkit-keyframes btn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.fade {
+	opacity: 0;
+	-webkit-animation:btn 1.5s ease forwards;
+	-webkit-animation-delay: 4s;
 }
