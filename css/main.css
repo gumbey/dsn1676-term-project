@@ -18,7 +18,7 @@ html {
 }
 
 html {
-	background-color: black
+	background-color: black;
 }
 
 h1 {
@@ -84,17 +84,17 @@ h1 {
 
  .btn {
  	position: absolute;
- 	top: 37rem;
+ 	top: 42rem;
 	left: calc(60% - 224px);
 	background: #428BCA;
 	color: #fff;
 	font-family: "Anonymous Pro" Sans-serif;
 	font-weight: 700;
-	font-size: 2em;
-	height: 3.750em;
-	width: 9.375em;
-	line-height: 3.75em;
-	margin: 1.5em 1.5em;
+	font-size: 2rem;
+	height: 2em;
+	width: 6em;
+	line-height: 2rem;
+	margin: 0 auto;
 	text-align: center;
 	border: 0;
 	transition: all 0.3s ease 0s;
