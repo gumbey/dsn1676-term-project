@@ -1,0 +1,83 @@
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html {
+	box-sizing: border-box;
+
+	-moz-text-size-adjust-100%;
+	-ms-text-size-adjust-100%;
+	-webkit-text-size-adjust-100%;
+	-text-size-adjust-100%;
+}
+
+*, *::before, *::after; {
+	box-sizing: inherit;
+}
+
+html {
+	background-color: black
+}
+
+h1 {
+	display: none;
+}
+
+.holder {
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	top: 6em;
+	left: calc(50% - 12em);
+	width: 25em;
+	margin: auto;
+	z-index: 1;
+	-webkit-animation: logo 2s ease;
+}
+
+@-webkit-keyframes logo {
+	0% {-webkit-transform: rotate(-260deg) scale(0,0);}
+	100% {-webkit-transform: rotate(0deg) scale(1,1);}
+}
+
+.burst {
+	position: absolute;
+	top: calc(50% + 10em);
+	left: calc(50% - 20em);
+	width: 40em;
+	margin: auto;
+	z-index: 0;
+	opacity: 0;
+	-webkit-filter: blur(78px);
+	-webkit-animation: burst 4s ease infinite;
+	-webkit-animation-delay: 2s;
+}
+
+@-webkit-keyframes burst {
+	0% {-webkit-opacity: 0;}
+	50% {-webkit-opacity: 1;}
+	100% {-webkit-opacity: 0;}
+}
+
+.rburst {
+	position: absolute;
+	top: calc(50% - 14px);
+	left: calc(50% - 20em);
+	width: 40em;
+	margin: auto;
+	z-index: 0;
+	opacity: 0;
+	-webkit-filter: blur(78px);
+	-webkit-animation: rburst 4s ease infinite;
+	-webkit-animation-delay: 2s;
+}
+
+@-webkit-keyframes rburst {
+	0% {-webkit-opacity: 0;}
+	50% {-webkit-opacity: 1;}
+	100% {-webkit-opacity: 0;}
+}
