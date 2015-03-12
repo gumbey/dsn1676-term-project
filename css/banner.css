@@ -1,3 +1,7 @@
+.none {
+  display: none;
+}
+
 .backholder {
   background-color: black;
   height: 100vh;
@@ -120,7 +124,8 @@
     opacity:1;
 }
 
-.js-box-show-hide {
+.js-box-show-hide,
+.box:target {
     display: none;
 }
 

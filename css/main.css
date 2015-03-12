@@ -1,0 +1,108 @@
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html {
+	box-sizing: border-box;
+
+	-moz-text-size-adjust-100%;
+	-ms-text-size-adjust-100%;
+	-webkit-text-size-adjust-100%;
+	-text-size-adjust-100%;
+}
+
+*, *::before, *::after; {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: 'Anonymous Pro', Sans-serif;
+	background-color: #ECF6F8;
+}
+
+@media only screen and (min-width: 60em) {
+
+html {
+    font-size: 110%;
+}
+}
+
+@media only screen and (min-width: 90em) {
+
+html {
+    font-size: 120%;
+}
+
+}
+
+@media only screen and (min-width: 120em) {
+
+html {
+    font-size: 130%;
+}
+}
+
+body {
+	margin: 0;
+}
+
+.menu{
+/*	display: inline-block;*/
+	text-decoration: none;
+}
+
+.active{
+	display: block;
+	padding: 0;
+}
+
+.menu {
+	background: #00AFD2;
+/*	display:none;*/
+	width: 100%;
+}
+
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.menu ul li {
+	color: #ECF6F8;
+	font-size: 1em;
+	letter-spacing: .2em;
+	padding: 1em 0;
+	text-transform: uppercase;
+}
+
+.menu ul li:hover {
+	background-color:#86D2DD;
+}
+
+.menu a {
+	text-decoration: none;
+	color; #fff
+}
+
+@media only screen and (min-width:25em) {
+
+    .menu li {
+        display: block;
+        padding: 0;
+    }
+    .menu {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width:48em){
+
+    .menu {
+        display: inline-block;
+        text-align: right;
+    }
+}
