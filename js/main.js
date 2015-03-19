@@ -1,6 +1,9 @@
 var $btnShowHide = $('.btn-show-hide');
 var $box = $('.box');
 var $hOne = $('.none');
+var $navBtn = $('.nav-btn');
+var $menu = $('.menu');
+var $main = $('.main');
 
 $btnShowHide.on('click', function () {
    $box.toggleClass('js-box-show-hide');
@@ -8,17 +11,14 @@ $btnShowHide.on('click', function () {
    sessionStorage.setItem('active','yes');
 });
 
+$navBtn.on('click', function () {
+  $menu.toggleClass('js-menu-open');
+});
+
 if(sessionStorage.getItem('active')){
   $box.toggleClass('js-box-show-hide');
   $hOne.removeClass('none');
 }
-
-$(document).ready(function(){
-  $('.toggle').click(function(){
-    $('.menu').slideToggle(700);
-    $('.menu').toggle(display);
-  });
-});
 
 if ( display === false ) {
   $('.menu').show();
