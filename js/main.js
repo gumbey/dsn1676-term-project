@@ -4,11 +4,54 @@ var $hOne = $('.none');
 var $navBtn = $('.nav-btn');
 var $menu = $('.menu');
 var $main = $('.main');
+var $underCard = $('.nameholder');
+var $underCardTwo = $('.nameholder2');
+var $underCardThree = $('.nameholder3');
+var $mainCard = $('.maincard')
+var $mainCardTwo = $('.maincard2')
+var $mainCardThree = $('.maincard3')
+var $showCard = $('.js-nameholder-on')
 
 $btnShowHide.on('click', function () {
    $box.toggleClass('js-box-show-hide');
    $hOne.removeClass('none');
    sessionStorage.setItem('active','yes');
+});
+
+$(document).ready(function(){
+    $mainCard.mouseover(function(){
+        $underCard.removeClass('nameholder');
+        $underCard.addClass('js-nameholder-on');
+    });
+    $("p").mouseout(function(){
+        $underCard.addClass('nameholder');
+        $underCard.removeClass('js-nameholder-on');
+
+    });
+});
+
+$(document).ready(function(){
+    $mainCardTwo.mouseover(function(){
+        $underCardTwo.removeClass('nameholder2');
+        $underCardTwo.addClass('js-nameholder-on');
+    });
+    $("p").mouseout(function(){
+        $underCardTwo.addClass('nameholder2');
+        $underCardTwo.removeClass('js-nameholder-on');
+
+    });
+});
+
+$(document).ready(function(){
+    $mainCardThree.mouseover(function(){
+        $underCardThree.removeClass('nameholder3');
+        $underCardThree.addClass('js-nameholder-on');
+    });
+    $("p").mouseout(function(){
+        $underCardThree.addClass('nameholder3');
+        $underCardThree.removeClass('js-nameholder-on');
+
+    });
 });
 
 $navBtn.on('click', function () {

@@ -20,7 +20,7 @@ html {
 html {
 	font-family: 'Anonymous Pro', Sans-serif;
 	background-color: #ECF6F8;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media only screen and (min-width: 60em) {
@@ -59,7 +59,7 @@ body {
   width: 100%;
   left: 100%;
   background-color: rgba(10,10,10, 0.8);
-  top: 7.5em;
+  top: 4.5em;
   transition: all 350ms ease;
   z-index: 100;
 }
@@ -169,8 +169,8 @@ body {
 
 .changed{
   position: absolute;
+  left: calc(50% - 94px);
   bottom: 0;
-  left: 25%;
   opacity: 0;
   display: block;
 }
@@ -183,12 +183,66 @@ figure:hover .changed {
   opacity: 1;
 }
 
+.used{
+  padding:0;
+  margin: 0;
+}
 
 .change{
   position: relative;
   opacity: 1;
 }
 
+.aftere{
+  margin: 0;
+  padding: 0;
+  color: purple;
+}
+
+.illa{
+  margin: 0;
+  padding: 0;
+  color: orange;
+}
+
+.centerholder{
+  padding:0;
+  margin: 0;
+  text-align: center;
+}
+
+.nameholder{
+  opacity: 0;
+}
+
+.nameholder2{
+  opacity: 0;
+}
+
+.nameholder3{
+  opacity: 0;
+}
+
+.js-nameholder-on{
+  background-color: #262626;
+  opacity: 1;
+}
+
+.maincard{
+  margin: 0;
+}
+
+.maincard2{
+  margin: 0;
+}
+
+.maincard3{
+  margin: 0;
+}
+
+.cardholder{
+
+}
 
 @media only screen and (min-width:25em) {
 
