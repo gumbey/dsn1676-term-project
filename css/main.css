@@ -213,17 +213,21 @@ figure:hover .changed {
 
 .nameholder{
   opacity: 0;
+  transition: all 0.3s;
 }
 
 .nameholder2{
   opacity: 0;
+  transition: all 0.3s;
 }
 
 .nameholder3{
   opacity: 0;
+  transition: all 0.3s;
 }
 
 .js-nameholder-on{
+  transition: all 0.3s;
   background-color: #262626;
   opacity: 1;
 }
