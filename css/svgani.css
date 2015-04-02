@@ -3,8 +3,19 @@
 }
 
 .bitme{
-  /*transform: translateY(20em)*/
+  -wekit-animation: bitme 4s;
   animation: bitme 4s;
+}
+
+
+@-webkit-keyframes bitme {
+  0% {-webkit-transform: translateY(17em);}
+  9% {-webkit-transform: translateY(12em);}
+  11% {-webkit-transform: translateY(13em);}
+  13% {-webkit-transform: translateY(12em);}
+  15% {-webkit-transform: translateY(17em);}
+  20% {-webkit-transform: translateY(-6em);}
+  25% {-webkit-transform: translateY(0em);}
 }
 
 @keyframes bitme {
@@ -19,14 +30,18 @@
 
 .hello{
   opacity: 0;
+  -webkit-animation: hello 2s ease forwards;
+  -webkit-animation-delay: .5s;
   animation: hello 2s ease forwards;
   animation-delay: .5s;
+}
+
+@-webkit-keyframes hello {
+  0% {-webkit-opacity: 0;}
+  100% {-webkit-opacity: 1;}
 }
 
 @keyframes hello {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
-
-
