@@ -11,7 +11,6 @@ var $mainCard = $('.maincard')
 var $mainCardTwo = $('.maincard2')
 var $mainCardThree = $('.maincard3')
 var $showCard = $('.js-nameholder-on')
-
 var $thumbs = $('.thumbnails');
 var $lbImg = $('.lightbox-img');
 var $lb = $('.lightbox');
@@ -68,11 +67,11 @@ if(sessionStorage.getItem('active')){
   $hOne.removeClass('none');
 }
 
-if ( display === false ) {
-  $('.menu').show();
-} else if ( display === false ) {
-  $('.menu').hide();
-}
+// if ( display === false ) {
+//   $('.menu').show();
+// } else if ( display === false ) {
+//   $('.menu').hide();
+// }
 
 $thumbs.on('click', 'a', function(e) {
   e.preventDefault();
@@ -86,3 +85,5 @@ $thumbs.on('click', 'a', function(e) {
 $btnClose.on('click', function () {
   $lb.attr('data-state', 'hidden');
 });
+
+$('.top-nav').localScroll();
