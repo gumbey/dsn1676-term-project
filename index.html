@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Doyle Designs</title>
-	<link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
 	<link href="css/grid.css" rel="stylesheet">
 	<link href="css/type.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -15,75 +15,92 @@
 <body>
 <main>
 <div class="none">
-	<header class=" dgrey" role="banner">
-		<div class="grid grid-middle">
-			<div class="unit unit-xs-3-4 unit-s-3-4 unit-m-3-4 unit-l-3-4">
-				<h1 class="peta gutter island-half push-0 twhite"><a herf="index.html">Doyle Design</a></h1>
-				</div>
-				<a href="#menu" id="toggle" class="nav-btn"><span></span></a>
-						<nav role="navigation" id="navigation" class="menu unit unit-xs-1-4 unit-s-1-4 unit-m-1-4 unit-l-1-4">
-	            <ul class="nav-list push-0">
-	              <li><a class="current-item island-half" href="index.html">Home</a></li>
-	              <li><a class="island-half" href="about.html">About</a></li>
-	              <li><a class="island-half" href="contact.html">Contact</a></li>
+<ul class="skip-links">
+        <li><a href="#main">Skip to main contect</a></li>
+        <li><a href="#navigation">Skip to navigation</a></li>
+    </ul>
+<header role="banner">
+    <div class="grid grid-middle bblue" id="top">
+        <div class="unit unit-xs-1 unit-s-1 unit-m-3-4 unit-l-3-4">
+            <h1 class="peta gutter island-half push-0"><a href="index.html">DOYLE DESIGNS</a></h1>
+        </div>
+        <a href="#menu" id="toggle" class="nav-btn"><span></span></a>
+			<nav role="navigation" id="navigation" class=" menu unit unit-xs-1-4 unit-s-1-4 unit-m-1-4 unit-l-1-4">
+	            <ul class="top-nav nav-list push-0">
+	              <li><a class="island-half" href="#aboutme">About</a></li>
+                  <li><a class="island-half" href="#motion">motion</a></li>
+                  <li><a class="island-half" href="#illustrations">illustrations</a></li>
 	            </ul>
-        		</nav>
-					</div>
-	</header>
+            </nav>
+        </div>
+</header>
+<main role='main' id="main">
+    <div class="billboard">
+        <div class="large-screen-b">
+            <div class="grid-bottom">
+                <div class="unit unit-xs-1 unit-s-1 unit-m-3-4 unit-l-2-3 unit-xl-2-3 island">
+                    <h2 class="zetta push-0 island-half billboardtype-b"></h2>
+                </div>
+                <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-3-4 unit-xl-3-4 island">
+                    <p class="giga island push-0 billboardtype-w"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dgrey">
+        <div class="grid large-screen">
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 unit-xl-1 gutter">
+                <h2 class="yotta pad-t push-0 twhite" id="aboutme">Who am I?</h2>
+                <p class="pad-b twhite">Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            </div>
+        </div>
+    </div>
 
-	<div class="grid">
-			<div class="thumbnails cardholder unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3 unit-xl-1-3">
-				<figure class="maincard ">
-				<a href=images/illustrations.jpg>
-				<img class="imgwidth icon" src="images/illustrations.jpg" alt="">
-				</a>
-				<figcaption class="twhite hiddentext" > <span class="change">Illustrations</span> <span class="changed">Click to View</span></figcaption>
-				</figure>
-				<div class="centerholder">
-				<div class="nameholder">
-					<p class="used twhite">Programs used</p>
-					<p class="illa google">Ai</p>
-				</div>
-			</div>
-			</div>
-			<div class="cardholder unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3 unit-xl-1-3">
-				<figure class="maincard2 ">
-				<a href=images/motion.png>
-					<img class="imgwidth icon" src="images/motion.png" alt="">
-				</a>
-					<figcaption class="twhite hiddentext" > <span class="change">Motion</span> <span class="changed">Click to View</span></figcaption>
-				</figure>
-			<div class="centerholder">
-				<div class="nameholder2">
-					<p class="used twhite">Programs used</p>
-					<p class="aftere google">Ae <span class="illa google">Ai</span></p>
-				</div>
-			</div>
-			</div>
-			<div class="cardholder unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3 unit-xl-1-3">
-				<figure class="maincard3">
-				<a href=images/branding.svg>
-					<img class="imgwidth icon" src="images/branding.svg" alt="">
-				</a>
-					<figcaption class="twhite hiddentext" > <span class="giga change">Banding</span> <span class="giga changed">Click to View</span></figcaption>
-				</figure>
-				<div class="centerholder">
-				<div class="nameholder3">
-					<p class="used twhite">Programs used</p>
-					<p class="illa google">Ai</p>
-				</div>
-				</div>
-			</div>
-				<div class="lightbox" data-state="hidden">
-			<div class="lightbox-container">
-				<button class="btn-close">X</button>
-				<div class="lightbox-content">
-					<img class="lightbox-img" alt="">
-				</div>
-			</div>
-		</div>
+    <div class="lgery">
+        <div class="large-screen">
+            <div class="grid">
+                <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-push-m-1-2 unit-push-l-1-2 unit-push-xl-1-2 unit-l-1-2 unit-xl-1-2 b-push-b b-push-t">
+                    <img class="island gifwidth" src="images/motion.gif" alt="#">
+                </div>
+                <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-pull-m-1-2 unit-pull-l-1-2 unit-pull-xl-1-2 unit-l-1-2 unit-xl-1-2 b-push-b b-push-t middle">
+                    <h2 class="gutter" id="motion">Motion Graphics</h2>
+                    <p class="gutter">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                     ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac,
+                      vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	</div>
+        <div class="white">
+        <div class="large-screen">
+            <div class="grid">
+                <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2 b-push-b b-push-t">
+                    <img class="island imgwidth" src="images/illustrations.jpg" alt="#">
+                </div>
+                <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2 b-push-b b-push-t">
+                    <h2 class="gutter" id="illustrations">Illustrations</h2>
+                    <p class="gutter">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                     ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac,
+                      vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+    <footer class="grid footer island-half micro bblue">
+            <div role="contentinfo" class="unit unit-xs-1 unit-s-1 unit-m-2-3 unit-l-3-4">
+                <p class="copyright push-0">© 2015 Doyle Design</p>
+            </div>
+            <nav class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-4">
+                <ul class="nav push-0 navfooter">
+                    <li><a href="#top" >Back to top</a></li>
+                </ul>
+            </nav>
+    </footer>
 </div>
 
 <div class="box backholder">
@@ -107,6 +124,8 @@
 </div>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+<script type="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
