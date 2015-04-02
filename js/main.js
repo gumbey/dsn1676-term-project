@@ -87,3 +87,4 @@ $btnClose.on('click', function () {
 });
 
 $('.top-nav').localScroll();
+$('.nav').localScroll();

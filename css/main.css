@@ -180,13 +180,13 @@ a {
 }
 
 .billboard{
-    background-image: url(../images/8bitme.svg);
+    /*background-image: url(../images/8bitme.svg);*/
     background-size: cover;
     background-position: center top;
 }
 
 .imgwidth{
-  padding: 0 0 0 5em ;
+  padding: 0 0 0 8em ;
   margin: auto;
   width:50%;
   z-index: 1;

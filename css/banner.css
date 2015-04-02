@@ -20,11 +20,16 @@
   margin: auto;
   z-index: 1;
   -webkit-animation: logo 2s ease;
+  animation: logo 2s ease;
 }
 
 @-webkit-keyframes logo {
   0% {-webkit-transform: rotate(-260deg) scale(0,0);}
   100% {-webkit-transform: rotate(0deg) scale(1,1);}
+}
+@keyframes logo {
+  0% {transform: rotate(-260deg) scale(0,0);}
+  100% {transform: rotate(0deg) scale(1,1);}
 }
 
 .burst {
@@ -38,12 +43,21 @@
   -webkit-filter: blur(78px);
   -webkit-animation: burst 2s ease infinite;
   -webkit-animation-delay: 2s;
+  filter: blur(78px);
+  animation: burst 2s ease infinite;
+  animation-delay: 2s;
 }
 
 @-webkit-keyframes burst {
   0% {-webkit-opacity: 0;}
   50% {-webkit-opacity: 1;}
   100% {-webkit-opacity: 0;}
+}
+
+@keyframes burst {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 .rburst {
@@ -57,12 +71,21 @@
   -webkit-filter: blur(78px);
   -webkit-animation: rburst 4s ease infinite;
   -webkit-animation-delay: 2s;
+  filter: blur(78px);
+  animation: rburst 4s ease infinite;
+  animation-delay: 2s;
 }
 
 @-webkit-keyframes rburst {
   0% {-webkit-opacity: 0;}
   50% {-webkit-opacity: 1;}
   100% {-webkit-opacity: 0;}
+}
+
+@keyframes rburst {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
  .btn {
@@ -92,19 +115,33 @@
   100% {opacity: 1;}
 }
 
+@keyframes btn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .fade {
   opacity: 0;
   -webkit-animation:btn 1.5s ease forwards;
   -webkit-animation-delay: 5s;
+  animation:btn 1.5s ease forwards;
+  animation-delay: 5s;
 }
 
 .textfade {
   opacity: 0;
   -webkit-animation:text 1.5s ease forwards;
   -webkit-animation-delay: 4s;
+  animation:text 1.5s ease forwards;
+  animation-delay: 4s;
 }
 
 @-webkit-keyframes text {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes text {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
