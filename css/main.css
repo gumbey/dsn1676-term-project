@@ -180,9 +180,18 @@ a {
 }
 
 .billboard{
-    /*background-image: url(../images/8bitme.svg);*/
     background-size: cover;
     background-position: center top;
+}
+
+.midnav{
+  background: #86D2DD;
+  color: #fff;
+  padding: .25em;
+  font-size: 1.3em;
+  margin: auto;
+  text-align: center;
+  border: 0;
 }
 
 .imgwidth{
