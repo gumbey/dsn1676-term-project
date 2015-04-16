@@ -1,10 +1,10 @@
 var $bitme = $('.bitme')
+var $head = $('.head')
 
-$bitme.waypoint(function() {
-  console.log('waypoint!');
-}, { offset: '40em' });
-
-// $ps.on('click', function () {
-//    $pShirt.toggleClass('st11');
-//    $pShirt.removeClass('st5');
-// });
+$head.waypoint(function (direction) {
+  if (direction == 'down') {
+    $head.removeClass('headlook');
+  } else {
+    $head.addClass('headlook');
+  }
+}, {offset: '10%'});

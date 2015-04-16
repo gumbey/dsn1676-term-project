@@ -2,6 +2,7 @@
   display:block;
 }
 
+
 .bitme{
   -webkit-animation: bitme 4s;
   animation: bitme 4s;
@@ -26,6 +27,17 @@
   15% {transform: translateY(17em);}
   20% {transform: translateY(-6em);}
   25% {transform: translateY(0em);}
+}
+
+.headlook{
+  animation: headlook 2s;
+  transform-origin: 78em;
+}
+
+@keyframes headlook {
+  0% {transform: scaleX(0);}
+  50% {transform: scaleX(-1);}
+  100% {transform scaleX(0);}
 }
 
 .hello{
