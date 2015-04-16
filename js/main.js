@@ -16,12 +16,6 @@ var $lbImg = $('.lightbox-img');
 var $lb = $('.lightbox');
 var $btnClose = $('.btn-close');
 
-$btnShowHide.on('click', function () {
-   $box.toggleClass('js-box-show-hide');
-   $hOne.removeClass('none');
-   sessionStorage.setItem('active','yes');
-});
-
 $(document).ready(function(){
     $mainCard.mouseover(function(){
         $underCard.removeClass('nameholder');
@@ -67,12 +61,6 @@ if(sessionStorage.getItem('active')){
   $hOne.removeClass('none');
 }
 
-// if ( display === false ) {
-//   $('.menu').show();
-// } else if ( display === false ) {
-//   $('.menu').hide();
-// }
-
 $thumbs.on('click', 'a', function(e) {
   e.preventDefault();
 
@@ -89,3 +77,4 @@ $btnClose.on('click', function () {
 $('.top-nav').localScroll();
 $('.nav').localScroll();
 $('.midnav').localScroll();
+
