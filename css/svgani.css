@@ -1,11 +1,16 @@
 .me{
   display:block;
+  width: 100%;
 }
 
+.holder{
+  overflow-x:hidden;
+}
 
 .bitme{
   -webkit-animation: bitme 4s;
   animation: bitme 4s;
+  z-index: 0;
 }
 
 
@@ -41,11 +46,13 @@
 }
 
 .hello{
+  position: relative;
+  top: -22em;
   opacity: 0;
   -webkit-animation: hello 2s ease forwards;
   -webkit-animation-delay: .5s;
   animation: hello 2s ease forwards;
-  animation-delay: .5s;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes hello {
@@ -71,68 +78,4 @@
 .illustrator {
   width: 15em;
   transform: translateY(22em) translateX(56em);
-}
-
-.st0 {
-  fill:#4A342F;
-}
-
-.st1 {
-  fill:#55403C;
-}
-
-.st2 {
-  fill:#FA3EFF;
-}
-
-.st3 {
-  fill:#003A52;
-}
-
-.st4 {
-  fill:#C89C6E;
-}
-
-.st5 {
-  fill:#FAA018;
-}
-
-.st6 {
-  fill:#282230;
-}
-
-.st7 {
-  fill:#9C7659;
-}
-
-.st8 {
-  fill:#C29360;
-}
-
-.st9 {
-  fill:#161324;
-}
-
-.st10{
-  fill:#CDA0FA;
-}
-
-.st11{
-  fill:#161324;
-}
-
-.st12{
-  fill:#00e3ff;
-}
-
-.st13{
-  fill:#382921;
-}
-
-.st14{
-  fill:#F9772F;
-}
-
-.st15{
-  fill:#FD732B;
 }

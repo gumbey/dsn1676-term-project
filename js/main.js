@@ -79,12 +79,12 @@ $('.nav').localScroll();
 $('.midnav').localScroll();
 
 var $bitme = $('.bitme')
-var $head = $('.head')
+var $banner = $('.me')
 
-$head.waypoint(function (direction) {
+$banner.waypoint(function (direction) {
   if (direction == 'down') {
-    $head.removeClass('headlook');
+    $banner.removeClass('bitme');
   } else {
-    $head.addClass('headlook');
+    $banner.addClass('bitme');
   }
-}, {offset: '10%'});
+});
