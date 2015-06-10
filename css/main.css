@@ -345,6 +345,10 @@ li {
   list-style: none;
 }
 
+.centred{
+  text-align: center;
+}
+
 @media only screen and (min-width:25em) {
 
     .menu li {
