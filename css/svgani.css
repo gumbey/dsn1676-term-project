@@ -27,11 +27,9 @@
 @keyframes bitme {
   0% {transform: translateY(17em);}
   9% {transform: translateY(12em);}
-  11% {transform: translateY(13em);}
   13% {transform: translateY(12em);}
-  15% {transform: translateY(17em);}
-  20% {transform: translateY(-6em);}
-  25% {transform: translateY(0em);}
+  17% {transform: translateY(14em);}
+  20% {transform: translateY(0em);}
 }
 
 .headlook{

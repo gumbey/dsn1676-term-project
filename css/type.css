@@ -2,11 +2,17 @@ html {
   font: normal 100%/1.5 "Roboto Condensed" , sans-serif;
 }
 
+
 h1, h2, h3, h4, h5, h6,
 p, ul, ol, dl, dd, figure,
 blockquote, details, hr,
 fieldset, pre, table {
   margin: 0 0 1.5rem;
+}
+
+.beta {
+  font-size: 4rem;
+  line-height: 1.3154;
 }
 
 .yotta {

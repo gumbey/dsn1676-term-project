@@ -1,22 +1,30 @@
-.bwight{
-  background-color: #ECF6F8;
+/*Base Colours*/
+
+.lgrey {
+  background-color: #dcdcdc;
 }
 
-.bblue{
-  background-color: #86D2DD;
+.mgrey {
+  background-color: #626266;
 }
 
-.blue{
-  background-color: #00AFD2;
+.dgrey {
+  background-color: #020304;
 }
 
-.fred{
-  background-color: #F04E34;
+.gyel {
+  background-color: #cce961
 }
 
-.dgrey{
-  background-color: #262626;
+.tan {
+  background-color: #938172
 }
+
+.burr {
+  background-color: #541f14
+}
+
+/*Colours for type*/
 
 .tdgrey{
   color: #262626;
@@ -24,76 +32,4 @@
 
 .twhite{
   color: #ECF6F8;
-}
-
-.white{
-  background-color: white;
-}
-
-.lgery{
-  background-color: #e5e5e5;
-}
-
-.st0 {
-  fill:#4A342F;
-}
-
-.st1 {
-  fill:#55403C;
-}
-
-.st2 {
-  fill:#FA3EFF;
-}
-
-.st3 {
-  fill:#003A52;
-}
-
-.st4 {
-  fill:#C89C6E;
-}
-
-.st5 {
-  fill:#FAA018;
-}
-
-.st6 {
-  fill:#282230;
-}
-
-.st7 {
-  fill:#9C7659;
-}
-
-.st8 {
-  fill:#C29360;
-}
-
-.st9 {
-  fill:#161324;
-}
-
-.st10{
-  fill:#CDA0FA;
-}
-
-.st11{
-  fill:#161324;
-}
-
-.st12{
-  fill:#00e3ff;
-}
-
-.st13{
-  fill:#382921;
-}
-
-.st14{
-  fill:#F9772F;
-}
-
-.st15{
-  fill:#FD732B;
 }
